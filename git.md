@@ -56,6 +56,23 @@ Vous n'avez plus qu'à sauvegarder et quitter, les modifications seront prises e
 
 Si vous avez déjà push le commit, vous allez devoir forcer le push: `git push origin +master`. Il y a cependant un problème avec cette commande, c'est que si des utilisateurs ont un clone avec le commit foireux, ils ne pourront pas pull normalement.
 
+## Vérifier ce que je fais
+
+### Afficher l’état actuel du dépot
+
+Il est très important de se servir de `git status` pour avoir une vision
+globale de l’état du dépot. Cette commande affiche ce qui est prêt à être
+commit, ce qui n’est pas prêt d’être commit, les fichiers non suivis et
+beacoup d’autres informations. À utiliser sans modération.
+
+### Afficher les modifications faites
+
+`git diff` est une merveilleuse commande permettant de comparer n’importe
+quel commit à n’importe quel autre commit. Sans paramètre, il affiche les
+modifications entre l’état actuel du dépot et le dernier commit.
+
+Je vous invite à consulter [la documentation][git diff] pour plus de détails.
+
 ## Les remotes
 
 ### Qu'est ce qu'une remote ?
@@ -97,5 +114,6 @@ Internet ne manque pas d’informations sur Git. Vous pouvez consulter [la
 documentation sur le site officiel][gitscm], ou faire une recherche
 [Google][google].
 
+[git diff]: https://git-scm.com/docs/git-diff
 [gitscm]: https://git-scm.com/doc
 [google]: https://google.com/
