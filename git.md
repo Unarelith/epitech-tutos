@@ -10,25 +10,25 @@ Par exemple, si on ajoute des fichiers error.h et error.c, comment le commit pou
 
 De bons noms:
 
-> Fichiers error.c et error.h ajoutés.
+  - `Fichiers error.c et error.h ajoutés.`
 
-> Error handling: OK.
+  - `Error handling: OK.`
 
-> [error] Added.
+  - `[error] Added.`
 
 De mauvais noms:
 
-> error
+  - `error`
 
-> lol
+  - `lol`
 
 Et si on rajoute player_movement.c et player_movement.h:
 
-> Error handling: OK. Player movement: OK.
+  - `Error handling: OK. Player movement: OK.`
 
-> [error] Added. [player_movement] Added.
+  - `[error] Added. [player_movement] Added.`
 
-> [error|player_movement] Added.
+  - `[error|player_movement] Added.`
 
 ### Le contenu des commits
 
