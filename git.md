@@ -90,3 +90,12 @@ Pour push sur deux url à la fois:
 git remote set-url --add --push [remote_name] [url 1]
 git remote set-url --add --push [remote_name] [url 2]
 ```
+
+## Obtenir de l’aide
+
+Internet ne manque pas d’informations sur Git. Vous pouvez consulter [la
+documentation sur le site officiel][gitscm], ou faire une recherche
+[Google][google].
+
+[gitscm]: https://git-scm.com/doc
+[google]: https://google.com/
