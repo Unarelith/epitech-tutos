@@ -22,6 +22,12 @@ Vous arrivez sur un shell, tapez `su -`, puis `loadkeys fr-pc`.
 
 Vous utilisez maintenant un shell en super-utilisateur.
 
+Tapez cette commande afin de remonter le système de fichiers en lecture/écriture:
+
+```shell
+mount -o rw,remount /
+```
+
 ## Changer le mot de passe root
 
 Pour pouvoir changer le mot de passe, il faudra d'abord désactiver un service systemd qui change le mot de passe tout seul.
