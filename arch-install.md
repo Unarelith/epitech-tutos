@@ -48,15 +48,24 @@ vim /etc/systemd/logind.conf # HandlePowerKey=suspend
 pacman -S archlinux32-keyring-transition
 ```
 
-• Installer le bootloader (MBR):
+• Installer le bootloader:
 ```sh
 pacman -S grub os-prober
-# Only for MBR:
+```
+   - Only for MBR:
+```sh
 grub-install --target=i386-pc --no-floppy --recheck /dev/sda
-# Only for GPT:
+```
+   - Only for GPT (EFI):
+```sh
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=archlinux --recheck
+```
+
+   - Reload grub config:
+```sh
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
 • Installer X:
 ```sh
 pacman -S xorg-server xorg-xinit
