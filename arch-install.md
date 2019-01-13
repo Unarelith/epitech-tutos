@@ -1,5 +1,7 @@
 # Installation ArchLinux
 
+### Notes pour l'installation d'un Arch x86 depuis un Arch x86_64
+
 *Note:* Pour installer un système 32 bits il faut :
 
 - Un système ArchLinux 32 bits
@@ -10,6 +12,8 @@ ou
   - Un pacman.conf tweaké avec i686 en architecture et sans le dépôt multilib
   - Une mirrorlist custom
   - Le paquet `archlinux32-keyring-transition` installé
+
+## Installation
 
 • Faire un chroot:
 ```sh
